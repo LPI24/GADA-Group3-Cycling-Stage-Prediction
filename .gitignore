@@ -1,0 +1,22 @@
+# --- DATEN (zu groß für GitHub) ---
+data/raw/
+data/processed/
+data/external/
+Archive/
+# Wir ignorieren die Ordner komplett, damit keine dicken Files hochrutschen
+
+# --- LOGS & CHECKPOINTS ---
+logs/*.log
+*.log
+stage_checkpoint.json
+
+# --- PYTHON INTERNALS ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# --- SYSTEM DATEIEN ---
+.DS_Store
+Thumbs.db
