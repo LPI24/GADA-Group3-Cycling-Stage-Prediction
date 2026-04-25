@@ -1,22 +1,20 @@
-# --- DATEN (zu groß für GitHub) ---
-data/raw/
-data/processed/
-data/external/
-Archive/
-# Wir ignorieren die Ordner komplett, damit keine dicken Files hochrutschen
-
-# --- LOGS & CHECKPOINTS ---
-logs/*.log
-*.log
-stage_checkpoint.json
-
-# --- PYTHON INTERNALS ---
+# Python & Jupyter
 __pycache__/
 *.py[cod]
 *$py.class
+.ipynb_checkpoints
+.virtual_envs/
 venv/
-.env
 
-# --- SYSTEM DATEIEN ---
+# Daten (WICHTIG: Wir ignorieren den Inhalt von data, aber behalten den Ordner)
+data/raw/*.jsonl
+data/processed/*.pkl
+data/processed/*.csv
+
+# Scraping Ordner und Archive ignorieren
+scraping/
+Archive/
+
+# Betriebssystem
 .DS_Store
 Thumbs.db
