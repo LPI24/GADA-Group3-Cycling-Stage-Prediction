@@ -18,6 +18,7 @@ scraping/temp/
 logs/
 **/logs/
 *.log
+src/scraping/archive/
 
 # Archive ignorieren
 Archive/
