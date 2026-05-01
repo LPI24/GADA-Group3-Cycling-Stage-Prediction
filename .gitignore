@@ -6,13 +6,17 @@ __pycache__/
 .virtual_envs/
 venv/
 
-# Daten (WICHTIG: Wir ignorieren den Inhalt von data, aber behalten den Ordner)
+# Daten (Inhalt ignorieren, Struktur bleibt)
 data/raw/*.jsonl
 data/processed/*.pkl
 data/processed/*.csv
 
-# Scraping Ordner und Archive ignorieren
-scraping/
+# Stattdessen nur Scraping-Logs oder temporäre Scraper-Daten ignorieren:
+scraping/**/logs/
+scraping/**/*.log
+scraping/temp/
+
+# Archive ignorieren
 Archive/
 
 # Betriebssystem
