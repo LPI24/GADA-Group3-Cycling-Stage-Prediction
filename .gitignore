@@ -15,6 +15,7 @@ data/processed/*.csv
 scraping/**/logs/
 scraping/**/*.log
 scraping/temp/
+logs/
 
 # Archive ignorieren
 Archive/
