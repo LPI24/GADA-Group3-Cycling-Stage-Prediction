@@ -26,3 +26,9 @@ Archive/
 # Betriebssystem
 .DS_Store
 Thumbs.db
+
+# Lokale, nicht-versionierte Dokumentation (wird in Google Docs gepflegt)
+Dokumentation/
+
+# Anaconda-IDE-Artefakte
+anaconda_projects/
