@@ -1,0 +1,151 @@
+race,year,url,departure,arrival,departure_lat,departure_lon,arrival_lat,arrival_lon,distance,distance_km_koordinaten,distance_diff_raw
+giro-d-italia,2005,https://www.procyclingstats.com/race/giro-d-italia/2005/stage-5,Celano,L'Aquila,42.0843238,13.5462069,43.1596646,5.9241715,223.0,634.7656682404545,-411.7656682404545
+giro-d-italia,2006,https://www.procyclingstats.com/race/giro-d-italia/2006/stage-13,Aosta,Domodossola,44.7154707,5.0569017,46.1152451,8.2920459,223.0,296.5973976009811,-73.59739760098108
+giro-d-italia,2007,https://www.procyclingstats.com/race/giro-d-italia/2007/stage-2,Tempio Pausania,Bosa,40.8973821,9.1035159,43.244422,5.4071611,206.0,401.42119587008324,-195.42119587008324
+giro-d-italia,2007,https://www.procyclingstats.com/race/giro-d-italia/2007/stage-20,Bardolino,Verona,45.5312007,10.6918015,44.7396915,5.2067494,43.0,439.06592251739426,-396.06592251739426
+giro-d-italia,2007,https://www.procyclingstats.com/race/giro-d-italia/2007/stage-4,Salerno,Montevergine di Mercogliano,43.6083977,3.883555,40.9321502,14.73157,154.0,940.0551608451257,-786.0551608451257
+giro-d-italia,2007,https://www.procyclingstats.com/race/giro-d-italia/2007/stage-6,Tivoli,Spoleto,49.5234347,5.3625498,42.7342971,12.7382035,179.0,943.993932609937,-764.993932609937
+giro-d-italia,2007,https://www.procyclingstats.com/race/giro-d-italia/2007/stage-7,Spoleto,Scarperia,42.7342971,12.7382035,44.6844213,2.8575336,254.0,822.6648290618003,-568.6648290618003
+giro-d-italia,2008,https://www.procyclingstats.com/race/giro-d-italia/2008/stage-14,Verona,Alpe di Pampeago - Val di Fiemme,44.7396915,5.2067494,46.2964435,11.5060772,195.0,520.2513703314628,-325.2513703314628
+giro-d-italia,2008,https://www.procyclingstats.com/race/giro-d-italia/2008/stage-20,Rovetta,Tirano,45.9079038,9.9771853,41.3281482,19.8184435,232.0,940.7271132718463,-708.7271132718463
+giro-d-italia,2008,https://www.procyclingstats.com/race/giro-d-italia/2008/stage-8,Rivisondoli,Tivoli,41.8708957,14.0674295,49.5234347,5.3625498,208.0,1085.2886769138725,-877.2886769138725
+giro-d-italia,2009,https://www.procyclingstats.com/race/giro-d-italia/2009/stage-16,Pergola,Monte Petrano,46.66507,0.3656156,43.5172543,12.6163631,237.0,1022.0961021912814,-785.0961021912814
+giro-d-italia,2009,https://www.procyclingstats.com/race/giro-d-italia/2009/stage-17,Chieti,Blockhaus,42.1026928,14.4159053,50.993559,7.7244195,83.0,1112.108970532066,-1029.108970532066
+giro-d-italia,2009,https://www.procyclingstats.com/race/giro-d-italia/2009/stage-20,Napoli,Anagni,43.2729485,-0.415032,41.7447015,13.1526343,203.0,1123.757680959483,-920.757680959483
+giro-d-italia,2009,https://www.procyclingstats.com/race/giro-d-italia/2009/stage-4,Padova,San Martino di Castrozza,48.8540795,2.3258386,46.2623377,11.802828,165.0,766.6502613577835,-601.6502613577835
+giro-d-italia,2010,https://www.procyclingstats.com/race/giro-d-italia/2010/stage-11,Lucera,L'Aquila,41.5082727,15.3376465,43.1596646,5.9241715,262.0,794.7911713511487,-532.7911713511487
+giro-d-italia,2010,https://www.procyclingstats.com/race/giro-d-italia/2010/stage-8,Chianciano Terme,Terminillo,43.0582549,11.8284293,40.9610629,-4.1082986,189.0,1335.0773261231302,-1146.0773261231302
+giro-d-italia,2011,https://www.procyclingstats.com/race/giro-d-italia/2011/stage-17,Feltre,Tirano,46.0463692,11.9323564,41.3281482,19.8184435,230.0,822.301092407262,-592.301092407262
+giro-d-italia,2011,https://www.procyclingstats.com/race/giro-d-italia/2011/stage-2,Alba,Parma,48.3201921,4.1905397,44.6952006,10.0979869,244.0,605.3747597799593,-361.3747597799593
+giro-d-italia,2011,https://www.procyclingstats.com/race/giro-d-italia/2011/stage-9,Messina,Etna,48.8321544,2.2408137,37.7510251,14.9940321,169.0,1602.931888176768,-1433.931888176768
+giro-d-italia,2012,https://www.procyclingstats.com/race/giro-d-italia/2012/stage-10,Civitavecchia,Assisi,42.0937524,11.7922462,47.2541029,-1.5603047,186.0,1199.3979207492482,-1013.3979207492482
+giro-d-italia,2012,https://www.procyclingstats.com/race/giro-d-italia/2012/stage-11,Assisi,Montecatini Terme,47.2541029,-1.5603047,43.883179,10.7709533,255.0,1029.0702914365422,-774.0702914365422
+giro-d-italia,2013,https://www.procyclingstats.com/race/giro-d-italia/2013/stage-18,Mori,Polsa,48.9839674,2.6183971,45.784176,10.942843,20.6,720.1018008903807,-699.5018008903807
+giro-d-italia,2013,https://www.procyclingstats.com/race/giro-d-italia/2013/stage-5,Cosenza,Matera,39.5966853,16.3330556,48.8692756,2.3424087,203.0,1513.9771407434475,-1310.9771407434475
+giro-d-italia,2013,https://www.procyclingstats.com/race/giro-d-italia/2013/stage-9,San Sepoicro,Firenze,45.4631502,9.185411,43.7697955,11.2556404,170.0,249.59054337647146,-79.59054337647146
+giro-d-italia,2014,https://www.procyclingstats.com/race/giro-d-italia/2014/stage-16,Ponte de Legno,Val Martello/Martelltal,45.6819602,13.4116449,46.5380517,10.7597758,139.0,225.49033761336545,-86.49033761336545
+giro-d-italia,2014,https://www.procyclingstats.com/race/giro-d-italia/2014/stage-19,Bassano de Grappa,Cima Grappa (Crespano del Grappa),44.4061252,12.1999948,45.8287801,11.8401026,26.8,160.69222042311074,-133.89222042311073
+giro-d-italia,2014,https://www.procyclingstats.com/race/giro-d-italia/2014/stage-3,Armagh,Dublin,54.3161086,-6.7189182,43.956999,4.8850335,187.0,1424.2024653722674,-1237.2024653722674
+giro-d-italia,2014,https://www.procyclingstats.com/race/giro-d-italia/2014/stage-4,Giovinazzo,Bari,41.1874839,16.6716802,48.4876657,7.4901898,112.0,1086.1231074033124,-974.1231074033124
+giro-d-italia,2014,https://www.procyclingstats.com/race/giro-d-italia/2014/stage-9,Lugo,Sestola (Passo del Lupo),42.2360435,9.1760269,44.2147897,10.7189341,172.0,253.04867228206578,-81.04867228206578
+giro-d-italia,2015,https://www.procyclingstats.com/race/giro-d-italia/2015/stage-17,Tirano,Lugano,41.3281482,19.8184435,48.5663618,7.6909618,134.0,1245.8618166557417,-1111.8618166557417
+giro-d-italia,2015,https://www.procyclingstats.com/race/giro-d-italia/2015/stage-18,Melide,Verbania,42.9331573,-8.0276784,45.9344082,8.5580062,170.0,1355.7682753433667,-1185.7682753433667
+giro-d-italia,2015,https://www.procyclingstats.com/race/giro-d-italia/2015/stage-20,Saint Vincent,Sestriere,43.1614391,-0.1492738,44.9584528,6.8786855,196.0,595.8238831746189,-399.8238831746189
+giro-d-italia,2017,https://www.procyclingstats.com/race/giro-d-italia/2017/stage-17,Tirano,Canazei,41.3281482,19.8184435,46.4768809,11.7710748,219.0,861.4382273384392,-642.4382273384392
+giro-d-italia,2017,https://www.procyclingstats.com/race/giro-d-italia/2017/stage-5,Pedara,Messina,37.6168095,15.0602114,48.8321544,2.2408137,159.0,1618.455277216494,-1459.455277216494
+giro-d-italia,2017,https://www.procyclingstats.com/race/giro-d-italia/2017/stage-9,Montenero di Bisaccia,Blockhaus,41.9573191,14.7808937,50.993559,7.7244195,152.0,1139.6319309213663,-987.6319309213663
+giro-d-italia,2018,https://www.procyclingstats.com/race/giro-d-italia/2018/stage-10,Penne,Gualdo Tadino,44.0767,1.73031,43.2316518,12.7809617,244.0,893.3115191439042,-649.3115191439042
+giro-d-italia,2018,https://www.procyclingstats.com/race/giro-d-italia/2018/stage-11,Assisi,Osimo,47.2541029,-1.5603047,43.4835639,13.4532654,156.0,1243.1116828648685,-1087.1116828648685
+giro-d-italia,2018,https://www.procyclingstats.com/race/giro-d-italia/2018/stage-2,Haifa,Tel Aviv,48.8928888,2.3433773,52.373205,4.5301073,167.0,416.543791493271,-249.543791493271
+giro-d-italia,2018,https://www.procyclingstats.com/race/giro-d-italia/2018/stage-20,Susa,Cervinia,44.2886337,4.8402315,45.9356034,7.6304397,214.0,285.4148011251074,-71.41480112510737
+giro-d-italia,2018,https://www.procyclingstats.com/race/giro-d-italia/2018/stage-3,Be'er Sheva,Eilat,42.4040516,12.867841,52.1561459,6.7425598,229.0,1177.6891461317987,-948.6891461317987
+giro-d-italia,2019,https://www.procyclingstats.com/race/giro-d-italia/2019/stage-14,Saint Vincent,Courmayeur (Skyway Monte Bianco),43.1614391,-0.1492738,45.8375412,6.9408622,131.0,635.8706071122656,-504.8706071122656
+giro-d-italia,2019,https://www.procyclingstats.com/race/giro-d-italia/2019/stage-15,Ivrea,Como,45.451803,7.8932496,48.83471,2.2463614,232.0,568.8400242243403,-336.84002422434025
+giro-d-italia,2019,https://www.procyclingstats.com/race/giro-d-italia/2019/stage-6,Cassino,San Giovanni Rotondo,48.8716717,2.214212,41.7069106,15.7288455,238.0,1320.5704883851474,-1082.5704883851474
+giro-d-italia,2019,https://www.procyclingstats.com/race/giro-d-italia/2019/stage-7,Vasto,L'Aquila,42.12434,14.705923,43.1596646,5.9241715,185.0,727.1176744704368,-542.1176744704368
+giro-d-italia,2020,https://www.procyclingstats.com/race/giro-d-italia/2020/stage-1,Monreale,Palermo,38.0826321,13.2919931,48.8890386,2.3196996,15.1,1489.2064689252347,-1474.1064689252348
+giro-d-italia,2020,https://www.procyclingstats.com/race/giro-d-italia/2020/stage-20,Alba,Sestriere,48.3201921,4.1905397,44.9584528,6.8786855,190.0,426.37304408100704,-236.37304408100704
+giro-d-italia,2020,https://www.procyclingstats.com/race/giro-d-italia/2020/stage-3,Enna,Etna,44.42234,3.018538,37.7510251,14.9940321,150.0,1245.9130684440745,-1095.9130684440745
+giro-d-italia,2020,https://www.procyclingstats.com/race/giro-d-italia/2020/stage-6,Castrovillari,Matera,39.8119315,16.2026124,48.8692756,2.3424087,188.0,1488.8180943758398,-1300.8180943758398
+giro-d-italia,2020,https://www.procyclingstats.com/race/giro-d-italia/2020/stage-7,Matera,Brindisi,48.8692756,2.3424087,40.6358599,17.6884975,143.0,1514.0360770987404,-1371.0360770987404
+giro-d-italia,2021,https://www.procyclingstats.com/race/giro-d-italia/2021/stage-10,L'Aquila,Foligno,43.1596646,5.9241715,42.9559744,12.7034782,139.0,551.1079606540171,-412.1079606540171
+giro-d-italia,2021,https://www.procyclingstats.com/race/giro-d-italia/2021/stage-12,Siena,Bagno di Romagna,48.8675855,2.3320015,43.8352272,11.9595985,212.0,925.7139528835587,-713.7139528835587
+giro-d-italia,2021,https://www.procyclingstats.com/race/giro-d-italia/2021/stage-13,Ravenna,Verona,44.3640607,12.0590095,44.7396915,5.2067494,198.0,544.4093143725504,-346.4093143725504
+giro-d-italia,2022,https://www.procyclingstats.com/race/giro-d-italia/2022/stage-16,Salò,Aprica,48.9566218,4.3628851,46.1268281,10.1470677,202.0,535.9620492197998,-333.96204921979984
+giro-d-italia,2022,https://www.procyclingstats.com/race/giro-d-italia/2022/stage-4,Avola,Etna,45.6619533,6.3723998,37.7510251,14.9940321,172.0,1132.6334575974515,-960.6334575974515
+giro-d-italia,2022,https://www.procyclingstats.com/race/giro-d-italia/2022/stage-5,Catania,Messina,37.5023612,15.0873718,48.8321544,2.2408137,174.0,1630.212565743009,-1456.212565743009
+giro-d-italia,2022,https://www.procyclingstats.com/race/giro-d-italia/2022/stage-9,Isernia,Blockhaus,41.6495092,14.2080618,50.993559,7.7244195,191.0,1151.061747986979,-960.0617479869791
+giro-d-italia,2023,https://www.procyclingstats.com/race/giro-d-italia/2023/stage-12,Bra,Rivoli,44.9861458,1.8493442,45.0697151,7.5176764,185.0,445.4706798434081,-260.4706798434081
+giro-d-italia,2023,https://www.procyclingstats.com/race/giro-d-italia/2023/stage-5,Atripalda,Salerno,40.9208124,14.8334989,43.6083977,3.883555,171.0,948.4668380715824,-777.4668380715824
+giro-d-italia,2024,https://www.procyclingstats.com/race/giro-d-italia/2024/stage-16,Laas,Santa Cristina Valgardena (Monte Pana),43.4697786,0.3098676,46.5497881,11.7196846,118.4,959.0250981549481,-840.6250981549481
+giro-d-italia,2024,https://www.procyclingstats.com/race/giro-d-italia/2024/stage-18,Fiera di Primiero,Padova,46.1770769,11.829606,48.8540795,2.3258386,178.0,772.6322990077743,-594.6322990077743
+giro-d-italia,2024,https://www.procyclingstats.com/race/giro-d-italia/2024/stage-4,Acqui Terme,Andora,44.6743287,8.4684633,42.5407167,1.5732033,190.0,603.4781441865566,-413.4781441865566
+giro-d-italia,2024,https://www.procyclingstats.com/race/giro-d-italia/2024/stage-5,Genova,Lucca,44.40726,8.9338624,47.1281692,0.9979549,178.0,685.449273606184,-507.44927360618397
+giro-d-italia,2025,https://www.procyclingstats.com/race/giro-d-italia/2025/stage-10,Lucca,Pisa,47.1281692,0.9979549,43.4714722,10.6797912,28.6,858.6532712138996,-830.0532712138996
+giro-d-italia,2025,https://www.procyclingstats.com/race/giro-d-italia/2025/stage-5,Ceglie Messapica,Matera,40.6460444,17.5170566,48.8692756,2.3424087,151.0,1502.594203063115,-1351.594203063115
+giro-d-italia,2025,https://www.procyclingstats.com/race/giro-d-italia/2025/stage-6,Potenza,Napoli,40.517312,15.8216088,43.2729485,-0.415032,227.0,1376.00052242433,-1149.00052242433
+giro-d-italia,2025,https://www.procyclingstats.com/race/giro-d-italia/2025/stage-9,Gubbio,Siena,43.3517605,12.5772959,48.8675855,2.3320015,181.0,998.5263157754583,-817.5263157754583
+tour-de-france,2005,https://www.procyclingstats.com/race/tour-de-france/2005/stage-2,Challans,Les Essarts,46.8478091,-1.877431,48.880997,0.9921208,182.0,311.3021258976209,-129.3021258976209
+tour-de-france,2007,https://www.procyclingstats.com/race/tour-de-france/2007/stage-12,Montpellier,Castres,43.6112422,3.8767337,49.8044444,3.2383333,178.5,690.3635418187872,-511.8635418187872
+tour-de-france,2008,https://www.procyclingstats.com/race/tour-de-france/2008/stage-20,Cérilly,Saint-Amand-Montrond,47.8663369,4.4955761,46.7227062,2.5046503,53.0,196.75040536018636,-143.75040536018636
+tour-de-france,2009,https://www.procyclingstats.com/race/tour-de-france/2009/stage-16,Martigny,Bourg-Saint-Maurice,49.8597222,4.1375,45.6186105,6.7695277,159.0,510.930655703217,-351.930655703217
+tour-de-france,2010,https://www.procyclingstats.com/race/tour-de-france/2010/stage-2,Brussel,Spa,50.8467372,4.352493,45.7639565,4.8379703,201.0,566.3153332839264,-365.3153332839264
+tour-de-france,2013,https://www.procyclingstats.com/race/tour-de-france/2013/stage-20,Annecy,Le Semnoz,45.8992348,6.1288847,48.0739623,-1.451087,125.0,623.4033931325133,-498.4033931325133
+tour-de-france,2013,https://www.procyclingstats.com/race/tour-de-france/2013/stage-8,Castres,Ax-3 Domaines,49.8044444,3.2383333,42.7005767,1.8152092,195.0,797.4155922031828,-602.4155922031828
+tour-de-france,2014,https://www.procyclingstats.com/race/tour-de-france/2014/stage-2,York,Sheffield,47.3325605,5.0594388,53.4067813,-1.5376183,201.0,820.8947874742721,-619.8947874742721
+tour-de-france,2014,https://www.procyclingstats.com/race/tour-de-france/2014/stage-3,Cambridge,London,45.2029397,5.7042168,51.5187,-0.12907561,155.0,823.374667921682,-668.374667921682
+tour-de-france,2017,https://www.procyclingstats.com/race/tour-de-france/2017/stage-18,Briancon,Izoard,44.8984037,6.6436313,44.7599342,2.5398923,179.5,323.95541304537306,-144.45541304537306
+tour-de-france,2021,https://www.procyclingstats.com/race/tour-de-france/2021/stage-5,Changé,Laval Espace Mayenne,47.9875095,0.2839276,48.0823558,-0.7917688,27.2,80.67347318195483,-53.47347318195483
+tour-de-france,2022,https://www.procyclingstats.com/race/tour-de-france/2022/stage-8,Dole,Lausanne,47.0921047,5.4925463,47.0433932,1.1821018,186.3,326.47040701318645,-140.17040701318643
+tour-de-france,2022,https://www.procyclingstats.com/race/tour-de-france/2022/stage-9,Aigle,Châtel les portes du Soleil,49.3208333,3.1866667,46.2552341,6.8417474,192.9,436.6555666642345,-243.75556666423452
+tour-de-france,2023,https://www.procyclingstats.com/race/tour-de-france/2023/stage-16,Passy,Combloux,46.5412837,4.5343419,45.8949213,6.6448413,22.4,177.5640085042474,-155.1640085042474
+tour-de-france,2023,https://www.procyclingstats.com/race/tour-de-france/2023/stage-19,Moirans-en-Montagne,Poligny,46.431063,5.7255731,48.224132,2.7448859,172.8,300.32530713867754,-127.52530713867753
+vuelta-a-espana,2005,https://www.procyclingstats.com/race/vuelta-a-espana/2005/stage-16,Leon,Valladolid,45.7578137,4.8320114,41.6200024,-4.7259906,162.5,894.8146154338925,-732.3146154338925
+vuelta-a-espana,2005,https://www.procyclingstats.com/race/vuelta-a-espana/2005/stage-20,Guadalajara,Alcala de Henares,43.5297858,10.3477081,40.481954,-3.363981,38.9,1180.9461785272201,-1142.04617852722
+vuelta-a-espana,2005,https://www.procyclingstats.com/race/vuelta-a-espana/2005/stage-3,Cordoba,Puertollano,50.6188928,3.0511101,38.6852161,-4.1111749,153.3,1441.1949819056667,-1287.8949819056668
+vuelta-a-espana,2005,https://www.procyclingstats.com/race/vuelta-a-espana/2005/stage-5,Alcazar de San Juan,Cuenca,39.3899806,-3.2101376,48.8645216,2.3241359,176.0,1141.597953286056,-965.597953286056
+vuelta-a-espana,2005,https://www.procyclingstats.com/race/vuelta-a-espana/2005/stage-6,Cuenca,Valdelinares,48.8645216,2.3241359,40.3913722,-0.6059123,217.0,970.0825177502535,-753.0825177502535
+vuelta-a-espana,2006,https://www.procyclingstats.com/race/vuelta-a-espana/2006/stage-12,Aranda de Duero,Guadalajara,41.6715067,-3.6851172,43.5297858,10.3477081,169.3,1165.543478651759,-996.243478651759
+vuelta-a-espana,2006,https://www.procyclingstats.com/race/vuelta-a-espana/2006/stage-13,Guadalajara,Cuenca,43.5297858,10.3477081,48.8645216,2.3241359,180.0,855.4226521884418,-675.4226521884418
+vuelta-a-espana,2006,https://www.procyclingstats.com/race/vuelta-a-espana/2006/stage-17,Adra,Granada,43.6086401,3.8879598,37.1734995,-3.5995337,167.0,955.2715367492099,-788.2715367492099
+vuelta-a-espana,2006,https://www.procyclingstats.com/race/vuelta-a-espana/2006/stage-5,Plasencia,Estación de Esquí La Covatilla (Béjar),45.0534751,9.6947461,40.3484711,-5.6871806,178.0,1358.7333024146085,-1180.7333024146085
+vuelta-a-espana,2006,https://www.procyclingstats.com/race/vuelta-a-espana/2006/stage-6,Zamora,León,41.6857693,-5.942315,45.7578137,4.8320114,177.0,975.9372944388214,-798.9372944388214
+vuelta-a-espana,2006,https://www.procyclingstats.com/race/vuelta-a-espana/2006/stage-7,León,Alto de El Morredero (Ponferrada),45.7578137,4.8320114,42.3203172,-6.4405808,154.0,977.6644201085177,-823.6644201085177
+vuelta-a-espana,2006,https://www.procyclingstats.com/race/vuelta-a-espana/2006/stage-8,Ponferrada,Lugo,42.4984436,-6.5663176,42.2360435,9.1760269,181.6,1291.7890671217,-1110.1890671217002
+vuelta-a-espana,2007,https://www.procyclingstats.com/race/vuelta-a-espana/2007/stage-16,Jaen,Puertollano,45.7781054,3.1061013,38.6852161,-4.1111749,161.5,986.585753897947,-825.085753897947
+vuelta-a-espana,2007,https://www.procyclingstats.com/race/vuelta-a-espana/2007/stage-18,Talavera de la Reina,Ávila,39.9520814,-4.8928457,48.7654703,2.1693597,153.5,1128.2903131221274,-974.7903131221274
+vuelta-a-espana,2007,https://www.procyclingstats.com/race/vuelta-a-espana/2007/stage-19,Ávila,Alto de Abantos,48.7654703,2.1693597,40.6212012,-4.1792512,133.0,1034.482133910904,-901.4821339109039
+vuelta-a-espana,2008,https://www.procyclingstats.com/race/vuelta-a-espana/2008/stage-20,La Granja de San Ildefonso,Alto de Navacerrada,40.8981268,-4.0054013,38.6876138,-5.3635902,17.1,271.8026781017513,-254.70267810175133
+vuelta-a-espana,2008,https://www.procyclingstats.com/race/vuelta-a-espana/2008/stage-6,Ciudad Real,Toledo,38.9597347,-3.8828744,47.2326457,-1.5890253,150.1,938.4533018171811,-788.3533018171811
+vuelta-a-espana,2009,https://www.procyclingstats.com/race/vuelta-a-espana/2009/stage-13,Bejar,Alto de Sierra Nevada,40.3865812,-5.7649619,37.0965391,-3.3927223,172.4,419.6780882799546,-247.27808827995457
+vuelta-a-espana,2009,https://www.procyclingstats.com/race/vuelta-a-espana/2009/stage-18,Talavera de la Reina,Ávila,39.9520814,-4.8928457,48.7654703,2.1693597,165.0,1128.2903131221274,-963.2903131221274
+vuelta-a-espana,2009,https://www.procyclingstats.com/race/vuelta-a-espana/2009/stage-19,Ávila,Segovia,48.7654703,2.1693597,40.9481192,-4.1172101,179.8,999.7522840820052,-819.9522840820052
+vuelta-a-espana,2009,https://www.procyclingstats.com/race/vuelta-a-espana/2009/stage-8,Alzira,Alto de Aitana,43.699742,7.2608861,38.6498476,-0.2692864,204.7,843.4630926389135,-638.7630926389136
+vuelta-a-espana,2010,https://www.procyclingstats.com/race/vuelta-a-espana/2010/stage-19,Piedrahíta,Toledo,40.4635304,-5.3277166,47.2326457,-1.5890253,200.0,809.9513715822147,-609.9513715822147
+vuelta-a-espana,2011,https://www.procyclingstats.com/race/vuelta-a-espana/2011/stage-13,Sarria,Ponferrada,43.3655733,-1.1306699,42.4984436,-6.5663176,150.0,452.8233915892936,-302.8233915892936
+vuelta-a-espana,2011,https://www.procyclingstats.com/race/vuelta-a-espana/2011/stage-16,Villa Romana La Olmeda (Palencia),Haro,42.4818099,-4.736606,49.242552,5.9413688,180.0,1115.5598852193145,-935.5598852193145
+vuelta-a-espana,2011,https://www.procyclingstats.com/race/vuelta-a-espana/2011/stage-17,Faustino V,Peña Cabarga,45.8202066,8.9872114,43.3790764,-3.7786166,212.5,1045.2515806737254,-832.7515806737254
+vuelta-a-espana,2011,https://www.procyclingstats.com/race/vuelta-a-espana/2011/stage-4,Baza,Sierra Nevada,44.4348956,-0.2193947,45.5060826,6.6726666,170.2,554.918061604914,-384.718061604914
+vuelta-a-espana,2011,https://www.procyclingstats.com/race/vuelta-a-espana/2011/stage-5,Sierra Nevada,Valdepeñas de Jaén,45.5060826,6.6726666,37.5899962,-3.8153262,187.0,1237.562452146481,-1050.562452146481
+vuelta-a-espana,2012,https://www.procyclingstats.com/race/vuelta-a-espana/2012/stage-3,Faustino V,Eibar (Arrate),45.8202066,8.9872114,43.1999544,-2.444046,153.0,951.1308002725225,-798.1308002725225
+vuelta-a-espana,2013,https://www.procyclingstats.com/race/vuelta-a-espana/2013/stage-14,Bagà,Collada de la Gallina,43.2703671,5.3933492,42.4514765,1.4499257,155.7,334.02678195706346,-178.32678195706347
+vuelta-a-espana,2013,https://www.procyclingstats.com/race/vuelta-a-espana/2013/stage-5,Sober,Lago de Sanabria,48.4376228,3.2086538,42.1217317,-6.7161553,174.3,1045.4593521472466,-871.1593521472466
+vuelta-a-espana,2014,https://www.procyclingstats.com/race/vuelta-a-espana/2014/stage-10,Real Monasterio de Santa María de Veruela,Borja,41.8122657,-1.6927006,43.2866755,-1.1700365,36.7,169.44418830277698,-132.744188302777
+vuelta-a-espana,2014,https://www.procyclingstats.com/race/vuelta-a-espana/2014/stage-18,A Estrada,Monte Castrove en Meis,42.6809545,-8.4357972,37.5630203,14.2746215,157.0,2006.118666268978,-1849.118666268978
+vuelta-a-espana,2015,https://www.procyclingstats.com/race/vuelta-a-espana/2015/stage-10,Valencia,Castellón,44.9332277,4.8920811,40.2518568,-0.0615052,146.6,659.5659699672392,-512.9659699672392
+vuelta-a-espana,2015,https://www.procyclingstats.com/race/vuelta-a-espana/2015/stage-18,Roa,Riaza,46.0591225,11.6913348,41.279379,-3.4772594,204.0,1327.9967594688235,-1123.9967594688235
+vuelta-a-espana,2015,https://www.procyclingstats.com/race/vuelta-a-espana/2015/stage-19,Medina del Campo,Ávila,41.3085496,-4.9150256,48.7654703,2.1693597,185.8,997.7202476263051,-811.9202476263051
+vuelta-a-espana,2015,https://www.procyclingstats.com/race/vuelta-a-espana/2015/stage-21,Alcalá de Henares,Madrid,40.481954,-3.363981,46.1683779,-0.57631,98.8,671.1903707445914,-572.3903707445915
+vuelta-a-espana,2016,https://www.procyclingstats.com/race/vuelta-a-espana/2016/stage-14,Urdax-Dantxarinea,Aubisque,43.2926258,-1.5057423,43.5976434,1.4815669,196.0,243.52845762179447,-47.52845762179447
+vuelta-a-espana,2016,https://www.procyclingstats.com/race/vuelta-a-espana/2016/stage-2,Ourense,Baiona,42.1939629,-7.537124,43.4945144,-1.4736657,160.8,514.9253046079717,-354.1253046079717
+vuelta-a-espana,2016,https://www.procyclingstats.com/race/vuelta-a-espana/2016/stage-20,Benidorm,Alto de Aitana. Escuadrón Ejército del Aire,38.5406255,-0.1290929,40.7060759,-4.1422765,193.2,419.59595057933683,-226.39595057933684
+vuelta-a-espana,2016,https://www.procyclingstats.com/race/vuelta-a-espana/2016/stage-3,Marín,Dumbría. Mirador de Ézaro,46.3763427,6.5286902,42.9149845,-9.1050264,176.4,1292.787856823297,-1116.387856823297
+vuelta-a-espana,2016,https://www.procyclingstats.com/race/vuelta-a-espana/2016/stage-5,Viveiro,Lugo,43.6433582,-7.5957612,42.2360435,9.1760269,171.3,1371.8264609940525,-1200.5264609940525
+vuelta-a-espana,2017,https://www.procyclingstats.com/race/vuelta-a-espana/2017/stage-13,Coín,Tomares,49.0086421,6.1602525,37.3762863,-6.0456365,198.4,1624.2313677692123,-1425.8313677692122
+vuelta-a-espana,2017,https://www.procyclingstats.com/race/vuelta-a-espana/2017/stage-7,Llíria,Cuenca,39.6251478,-0.5952749,48.8645216,2.3241359,207.0,1053.1448378534178,-846.1448378534178
+vuelta-a-espana,2019,https://www.procyclingstats.com/race/vuelta-a-espana/2019/stage-17,Aranda de Duero,Guadalajara,41.6715067,-3.6851172,43.5297858,10.3477081,219.6,1165.543478651759,-945.9434786517589
+vuelta-a-espana,2019,https://www.procyclingstats.com/race/vuelta-a-espana/2019/stage-19,Ávila,Toledo,48.7654703,2.1693597,47.2326457,-1.5890253,165.2,327.4351585784422,-162.23515857844222
+vuelta-a-espana,2019,https://www.procyclingstats.com/race/vuelta-a-espana/2019/stage-7,Onda,Mas de la Costa,42.013551,8.8316935,41.2263446,1.3480365,183.2,628.0023831587907,-444.80238315879075
+vuelta-a-espana,2020,https://www.procyclingstats.com/race/vuelta-a-espana/2020/stage-13,Muros,Mirador de Ézaro,40.678061,8.617315,42.9149845,-9.1050264,33.7,1487.1573578777818,-1453.4573578777818
+vuelta-a-espana,2020,https://www.procyclingstats.com/race/vuelta-a-espana/2020/stage-14,Lugo,Ourense,42.2360435,9.1760269,42.1939629,-7.537124,204.7,1374.1928823587893,-1169.4928823587893
+vuelta-a-espana,2020,https://www.procyclingstats.com/race/vuelta-a-espana/2020/stage-15,Mos,Puebla de Sanabria,43.1818,2.64968,42.0201875,-6.6011789,230.8,767.6940830626738,-536.8940830626739
+vuelta-a-espana,2020,https://www.procyclingstats.com/race/vuelta-a-espana/2020/stage-17,Sequeros,Alto de la Covatilla,40.5120817,-6.0246972,40.2886257,-2.1949304,178.2,325.22440451260525,-147.02440451260526
+vuelta-a-espana,2020,https://www.procyclingstats.com/race/vuelta-a-espana/2020/stage-18,Hipódromo de la Zarzuela,Madrid,40.4693109,-3.7590677,46.1683779,-0.57631,139.6,683.8670951829936,-544.2670951829936
+vuelta-a-espana,2021,https://www.procyclingstats.com/race/vuelta-a-espana/2021/stage-16,Laredo,Santa Cruz de Bezana,47.7537689,-3.4988674,43.4429407,-3.9049243,180.0,480.38012199665644,-300.38012199665644
+vuelta-a-espana,2021,https://www.procyclingstats.com/race/vuelta-a-espana/2021/stage-18,Salas,Altu d'El Gamoniteiru,43.5235412,-0.7136478,43.1879683,-5.9237447,162.6,422.81744730505596,-260.217447305056
+vuelta-a-espana,2021,https://www.procyclingstats.com/race/vuelta-a-espana/2021/stage-19,Tapia,Monforte de Lemos,42.572478,-4.073293,42.5105492,-7.4875211,191.2,279.7834152634878,-88.58341526348784
+vuelta-a-espana,2022,https://www.procyclingstats.com/race/vuelta-a-espana/2022/stage-15,Martos,Sierra Nevada,37.7222633,-3.9703241,45.5060826,6.6726666,152.6,1235.6852602703798,-1083.0852602703799
+vuelta-a-espana,2022,https://www.procyclingstats.com/race/vuelta-a-espana/2022/stage-18,Trujillo,Alto del Piornal,42.998743,-0.0993466,41.9203587,-6.4280142,192.0,532.6934844693988,-340.69348446939875
+vuelta-a-espana,2022,https://www.procyclingstats.com/race/vuelta-a-espana/2022/stage-21,Las Rozas,Madrid,40.4942937,-3.867936,46.1683779,-0.57631,96.7,684.639864930719,-587.939864930719
+vuelta-a-espana,2022,https://www.procyclingstats.com/race/vuelta-a-espana/2022/stage-4,Vitoria-Gasteiz,Laguardia,42.8505845,-2.66145,40.245841,16.4643119,152.5,1614.077523641821,-1461.577523641821
+vuelta-a-espana,2022,https://www.procyclingstats.com/race/vuelta-a-espana/2022/stage-7,Camargo,Cistierna,45.5574634,9.210924,42.8031437,-5.1255957,190.0,1181.7451138669896,-991.7451138669896
+vuelta-a-espana,2023,https://www.procyclingstats.com/race/vuelta-a-espana/2023/stage-18,Pola de Allande,La Cruz de Linares,43.2777948,-6.6348221,38.1438219,-3.6374322,178.9,624.1620068383172,-445.26200683831723
+vuelta-a-espana,2023,https://www.procyclingstats.com/race/vuelta-a-espana/2023/stage-7,Utiel,Oliva,39.5680797,-1.2051604,49.3704523,4.5366043,200.8,1180.4967556055158,-979.6967556055158
+vuelta-a-espana,2024,https://www.procyclingstats.com/race/vuelta-a-espana/2024/stage-10,Ponteareas,Baiona,42.1886579,-8.5054515,43.4945144,-1.4736657,160.0,591.214658040944,-431.21465804094396
+vuelta-a-espana,2024,https://www.procyclingstats.com/race/vuelta-a-espana/2024/stage-13,Lugo,Puerto de Ancares,42.2360435,9.1760269,42.8685692,-6.8180294,176.0,1310.0324562018548,-1134.0324562018548
+vuelta-a-espana,2024,https://www.procyclingstats.com/race/vuelta-a-espana/2024/stage-4,Plasencia,Pico Villuercas,45.0534751,9.6947461,39.4694467,-5.4026712,170.5,1385.9447139271028,-1215.4447139271028
+vuelta-a-espana,2024,https://www.procyclingstats.com/race/vuelta-a-espana/2024/stage-7,Archidona,Cordoba,37.0945779,-4.3906561,50.6188928,3.0511101,180.5,1615.875129855721,-1435.375129855721
+vuelta-a-espana,2025,https://www.procyclingstats.com/race/vuelta-a-espana/2025/stage-10,Parque de la Naturaleza Sendaviva,El Ferial Larra Belagua,40.5412556,-3.4859216,42.985561,-0.807107,175.3,351.0095209460996,-175.7095209460996
+vuelta-a-espana,2025,https://www.procyclingstats.com/race/vuelta-a-espana/2025/stage-12,Laredo,Los Corrales de Buelna,47.7537689,-3.4988674,43.2619686,-4.0667653,144.9,501.41800002099086,-356.5180000209908
+vuelta-a-espana,2025,https://www.procyclingstats.com/race/vuelta-a-espana/2025/stage-2,Alba,Limone Piemonte,48.3201921,4.1905397,44.1934317,7.5827238,159.5,527.6813763572525,-368.1813763572525
+vuelta-a-espana,2025,https://www.procyclingstats.com/race/vuelta-a-espana/2025/stage-21,Alalpardo,Madrid,40.6296736,-3.4740558,46.1683779,-0.57631,108.0,658.7494853290658,-550.7494853290658
