@@ -20,6 +20,7 @@ logs/
 **/logs/
 *.log
 src/scraping/archive/
+src/Notebooks/test.ipynb
 
 # Archive ignorieren
 Archive/
