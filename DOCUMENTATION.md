@@ -24,6 +24,7 @@ Diese Tabelle beschreibt die flache Datenstruktur (Flat File) nach dem Preproces
 | `nationality` | `object` | Nationalität des Fahrers. | Kategorisches Feature |
 | `current_team` | `object` | Team des Fahrers im jeweiligen Rennjahr. | Teamstärke / Support |
 | `team_class` | `object` | Lizenzklasse des Teams (WT, PRT, PCT). | Qualitäts-Indikator |
+| `team_tier` | `categorical` | Ordnung der Lizenzklassen (Elite, Continental, Other) | kein unabhängiger Qualitäts-Indikator |
 | **Fahrer-Leistung (Saison)**| | | |
 | `rider_points_season` | `float64` | UCI-Punkte des Fahrers in der aktuellen Saison. | **Stärkstes Feature** |
 | `rider_rank_season` | `float64` | Weltranglistenplatz des Fahrers in der Saison. | Relative Stärke |
