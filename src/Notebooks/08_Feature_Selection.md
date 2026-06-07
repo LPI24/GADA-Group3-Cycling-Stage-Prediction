@@ -16,7 +16,7 @@
 | **arrival** | MetaData | Zielort der Etappe |
 | **distance** | Rennprofil | Streckenlänge in km (Einfluss auf die Ausdauerkomponente). |
 | **vertical_meters** | Rennprofil | Kumulierte Höhenmeter (Entscheidender Faktor für Kletterspezialisten). |
-| **won_how** | Löschen (Data Leakage) | Gibt die Art des Ankunftsszenarios vorab preis (z. B. "Sprint"). |
+| **won_how** | Löschen (Data Leakage) | Wir lassen es erstmal drin und testen es dann in dem Modellen. Gibt die Art des Ankunftsszenarios vorab preis (z. B. "Sprint"). |
 | **avg_speed** | Löschen (Data Leakage) | Die Durchschnittsgeschwindigkeit steht erst nach dem Ziel fest. |
 | **race_ranking** | Löschen | haben wir über den race_competitiveness_median erstellt |
 | **one_day_races** | Spezialisierung | PCS-Punkteprofil für Eintagesrennen (Fahrertyp-Indikator). |
@@ -60,3 +60,4 @@
 | **weather_rain_prob_mean** | **Wetter (ML Feature)** | Aggregierte mittlere Regenwahrscheinlichkeit des Renntages. |
 | **weather_precipitation_mean**| **Wetter (ML Feature)** | Aggregierte mittlere Niederschlagsmenge (Indikator für Schlammschlachten). |
 | **weather_humidity_mean** | **Wetter (ML Feature)** | Mittlere relative Luftfeuchtigkeit (Einfluss auf die Thermoregulation). |
+| **Gradient_final_km** | Rennprofil | Gradient der Strecke auf dem letzten Kilometer |
