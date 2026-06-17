@@ -10,6 +10,8 @@ venv/
 data/raw/*.jsonl
 data/processed/*.pkl
 data/processed/*.csv
+data/processed/tabpfn_3_experiments/*
+
 
 
 # Stattdessen nur Scraping-Logs oder temporäre Scraper-Daten ignorieren:
@@ -34,3 +36,6 @@ Dokumentation/
 
 # Anaconda-IDE-Artefakte
 anaconda_projects/
+
+# VSCode-Artefakte
+.vscode/
