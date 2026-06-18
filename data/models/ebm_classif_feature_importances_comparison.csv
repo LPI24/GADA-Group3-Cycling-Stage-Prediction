@@ -1,0 +1,23 @@
+Feature / Interaktion,Importance
+lag_rider_rank_season,0.18683416212459228
+lag_rider_points_season,0.13434182018159924
+vertical_meters & rider_bmi,0.11222149088661851
+rider_bmi,0.09712803855117173
+age_at_race,0.06175861866269336
+lag_race_competitiveness_median,0.05991502869231703
+gradient_final_km & lag_rider_rank_season,0.05274416514004165
+lag_team_power_index,0.050920134537805674
+rider_bmi & gradient_final_km,0.04865283211121329
+vertical_meters & lag_rider_points_season,0.04559627448062802
+stage_nr,0.04481369365623962
+rider_bmi & weather_temp_trend,0.02419735792184956
+vertical_meters,0.021188137370378918
+gradient_final_km,0.020008461146469807
+weather_temp_trend,0.00390073209941877
+wind_stability_index,0.003786961088922297
+team_tier,0.0033709217987094886
+distance,0.0031904588224153656
+weather_temp_mean,0.0019527661366082133
+weather_precipitation_mean,0.0011133863971446061
+weather_rain_prob_mean,0.0009442728245854006
+weather_humidity_mean,0.0008885018975326714
