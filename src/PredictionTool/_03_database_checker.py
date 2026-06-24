@@ -61,7 +61,7 @@ def check_riders_against_db(df_startlist, df_stage_meta):
     if not df_missing_master.empty:
         print(df_missing_master[['rider_name', 'rider_url']].to_string(index=False))
     else:
-        print("➔ Sensationell! Alle Fahrer der Startliste besitzen biometrische Stammdaten.")
+        print("Alle Fahrer der Startliste besitzen biometrische Stammdaten.")
 
     print("\n------------------------------------------------------------------")
     print(f"ERGEBNIS 2: Vorhandene Fahrer, denen Saison-Lags ({stage_year}) fehlen: {len(df_missing_lags)}")
@@ -69,7 +69,7 @@ def check_riders_against_db(df_startlist, df_stage_meta):
     if not df_missing_lags.empty:
         print(df_missing_lags[['rider_name', 'rider_url']].to_string(index=False))
     else:
-        print(f"➔ Perfekt! Für alle qualifizierten Fahrer liegen die Leistungs-Lags für {stage_year} vor.")
+        print(f"Für alle qualifizierten Fahrer liegen die Lag_ranking Werte für {stage_year} vor.")
 
     print("==================================================================\n")
 

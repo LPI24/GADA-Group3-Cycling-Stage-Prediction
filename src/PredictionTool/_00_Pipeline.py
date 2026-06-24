@@ -2,6 +2,7 @@
 from _01_input_handler import get_user_inputs
 from _02_stage_scraper import scrape_pcs_stage_clean
 from _03_database_checker import check_riders_against_db
+from _04_scraper_missing_drivers_profiles import scrape_and_save_missing_profiles
 
 def run_pipeline():
     # 1. Inputs vom User abfragen (Giro, Tour, Vuelta)
@@ -17,6 +18,9 @@ def run_pipeline():
 
     # 3. Datenbank-Check ausführen
     df_missing_master, df_missing_lags = check_riders_against_db(df_startlist, df_stage_meta)
+
+    # 4. Unbekannte Fahrerprofile UND deren Lags live in einem Abwasch scrapen!
+    scrape_and_save_missing_profiles(df_missing_master, df_stage_meta)
 
     # Output DFs Kontrolle
     print("\n--- KONTROLLE METADATEN ---")
