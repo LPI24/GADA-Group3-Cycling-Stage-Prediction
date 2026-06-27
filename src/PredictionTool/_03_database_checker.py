@@ -27,7 +27,10 @@ def check_riders_against_db(df_startlist, df_stage_meta):
     except:
         stage_year = 2026 # Sicherer Fallback
 
-    print(f"➔ Prüfe historische Lags für das Ziel-Saisonjahr: {stage_year}")
+
+    target_lag_year = stage_year - 1
+
+    print(f"Prüfe historische Lags für das Ziel-Saisonjahr: {stage_year} --- wir prüfen ob year == {stage_year} -1 vorhanden ist")
 
     missing_master = []  # Liste 1: Fahrer fehlen komplett in Tabelle 1
     missing_lags = []    # Liste 2: Fahrer sind in Tabelle 1, aber Lags für dieses Jahr fehlen in Tabelle 2
@@ -45,7 +48,7 @@ def check_riders_against_db(df_startlist, df_stage_meta):
             missing_master.append({"rider_url": url, "rider_name": name})
         else:
             # CHK 2: Wenn er in Master existiert, prüfen wir die beweglichen Lags für genau DIESES Etappenjahr
-            df_lags = db.get_rider_lags(url, stage_year)
+            df_lags = db.get_rider_lags(url, target_lag_year)
             if df_lags is None:
                 # Fahrer hat Stammdaten, aber keine Lags für diese Saison
                 missing_lags.append({"rider_url": url, "rider_name": name})
@@ -64,12 +67,12 @@ def check_riders_against_db(df_startlist, df_stage_meta):
         print("Alle Fahrer der Startliste besitzen biometrische Stammdaten.")
 
     print("\n------------------------------------------------------------------")
-    print(f"ERGEBNIS 2: Vorhandene Fahrer, denen Saison-Lags ({stage_year}) fehlen: {len(df_missing_lags)}")
+    print(f"ERGEBNIS 2: Vorhandene Fahrer, denen Saison-Lags ({target_lag_year}) fehlen: {len(df_missing_lags)}")
     print("------------------------------------------------------------------")
     if not df_missing_lags.empty:
         print(df_missing_lags[['rider_name', 'rider_url']].to_string(index=False))
     else:
-        print(f"Für alle qualifizierten Fahrer liegen die Lag_ranking Werte für {stage_year} vor.")
+        print(f"Für alle qualifizierten Fahrer liegen die Lag_ranking Werte für {target_lag_year} vor.")
 
     print("==================================================================\n")
 
