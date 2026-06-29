@@ -4,6 +4,7 @@ from _02_stage_scraper import scrape_pcs_stage_clean
 from _03_database_checker import check_riders_against_db
 from _04_scraper_missing_drivers_profiles import scrape_and_save_missing_profiles
 from _05_scraper_missing_lags import scrape_and_save_missing_lags
+from _06_feature_engineering import prepare_live_features
 from database_manager import CyclingDatabase
 import pandas as pd
 
@@ -31,9 +32,9 @@ def run_pipeline():
     print("\n--- Pipeline-Durchlauf beendet ---")
     print(50*"=")
 
-    # ==================================================================
+
     # FINALE KONSOLIDIERTE STARTLISTE AUS DER DB
-    # ==================================================================
+
     print("\n" + "="*80)
     print(" FINALE KONSOLIDIERTE STARTLISTE (ALLE DATEN AUS DER DATENBANK)")
     print("="*80)
@@ -98,6 +99,13 @@ def run_pipeline():
         print("--Fehler: Startliste ist leer.")
 
     conn.close()
+
+
+    # INTERMEDIATE: FEATURE-BUILDER FÜR DAS BACKEND STARTEN
+
+    if 'df_final_report' in locals() and not df_final_report.empty:
+        df_live_features = prepare_live_features(df_final_report, df_stage_meta)
+
 
 if __name__ == "__main__":
     run_pipeline()
