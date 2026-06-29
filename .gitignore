@@ -23,6 +23,7 @@ logs/
 *.log
 src/scraping/archive/
 src/Notebooks/test.ipynb
+src/Notebooks/tabpfn_alt
 
 # Archive ignorieren
 Archive/
