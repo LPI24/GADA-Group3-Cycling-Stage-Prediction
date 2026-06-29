@@ -1,0 +1,13 @@
+variant_name,most_likely_disjoint_class,rows,scope
+standard,outside_top20,12717,overall
+standard,rank_11_20,53,overall
+standard,rank_6_10,23,overall
+standard,top5,5009,overall
+standard,outside_top20,6447,2024
+standard,rank_11_20,27,2024
+standard,rank_6_10,14,2024
+standard,top5,2445,2024
+standard,outside_top20,6270,2025
+standard,rank_11_20,26,2025
+standard,rank_6_10,9,2025
+standard,top5,2564,2025

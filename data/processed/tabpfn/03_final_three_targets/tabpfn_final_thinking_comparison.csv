@@ -1,0 +1,2 @@
+variant_name,score_name,test_scope,n_stages,ndcg_at_5,ndcg_at_10,ndcg_at_20,top_1_accuracy,top_5_accuracy,top_10_accuracy,top_20_accuracy,map,total_fit_seconds,total_predict_seconds,total_runtime_seconds,mean_runtime_seconds_per_target,targets_completed,runtime_status
+standard,score_topk_raw_sum,overall,112,0.35654284995065605,0.37506918901107555,0.4305448431514966,0.2072072072072072,0.4144144144144144,0.5765765765765766,0.6666666666666666,0.40118632932253667,31.907,113.81200000000001,145.913,48.63766666666667,3,api_run

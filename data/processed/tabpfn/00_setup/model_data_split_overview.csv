@@ -1,0 +1,5 @@
+split,rows,features,stages,years
+train_selection,169349,17,997,<=2022
+validation,8897,17,57,2023
+test_original,17802,17,112,"2024, 2025"
+train_final,178246,17,1054,<=2023
