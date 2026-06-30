@@ -6,6 +6,7 @@ from _04_scraper_missing_drivers_profiles import scrape_and_save_missing_profile
 from _05_scraper_missing_lags import scrape_and_save_missing_lags
 from _06_feature_engineering import prepare_live_features
 from database_manager import CyclingDatabase
+from _07_model_usage import (run_master_inference)
 import pandas as pd
 
 def run_pipeline():
@@ -101,11 +102,28 @@ def run_pipeline():
     conn.close()
 
 
-    # INTERMEDIATE: FEATURE-BUILDER FÜR DAS BACKEND STARTEN
+
+    # SCHRITT 6 & 7: FEATURE BUILDER & MASTER INFERENZ
 
     if 'df_final_report' in locals() and not df_final_report.empty:
+        # 1. Schritt 6: Feature Matrix live bauen
         df_live_features = prepare_live_features(df_final_report, df_stage_meta)
 
 
+        # bauen den Mapper aus der Startliste (rider_url -> rank)
+        rank_mapper = df_startlist.set_index("rider_url")["rank"]
+
+        # Wir mappen den Rang auf die 'rider_url' aus dem df_final_report
+        # und schreiben das Ergebnis direkt über den Positions-Index in df_live_features
+        df_live_features["reales_etappen_ergebnis"] = df_final_report["rider_url"].map(rank_mapper).values
+
+        # Kontroll-Log für das Terminal
+        gefundene_raenge = df_live_features["reales_etappen_ergebnis"].notna().sum()
+        print(f"->Validierung: {gefundene_raenge} reale Ränge gekoppelt")
+
+        # 3. Schritt 7: Multi-Modell-Showdown starten (Zündet jetzt den Backtest)
+        df_model_metrics = run_master_inference(df_live_features, df_stage_meta)
+    else:
+        print("\nAbbruch der Inferenz: Keine gültigen Feature-Daten extrahiert.")
 if __name__ == "__main__":
     run_pipeline()

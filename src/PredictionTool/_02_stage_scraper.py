@@ -1,4 +1,6 @@
-# stage_scraper.py
+# ==============================================================================
+# _02_stage_scraper.py (FINALE VERSION MIT ERGEBNIS-EXTRAKTION)
+# ==============================================================================
 import re
 import pandas as pd
 from curl_cffi import requests
@@ -7,14 +9,7 @@ from selectolax.parser import HTMLParser
 def scrape_pcs_stage_clean(url, user_inputs):
     """
     Scrapt eine PCS-Etappenseite und liefert exakt zwei DataFrames zurück.
-
-    Inputs:
-    - url: Die zu scrapende PCS-Etappen-URL
-    - user_inputs: Dictionary aus dem input_handler (enthält race_slug und stage_num)
-
-    Outputs:
-    - df_startlist: DataFrame mit ['rank', 'rider_url', 'rider_name']
-    - df_stage_meta: DataFrame mit ['stage_url', 'race', 'date', 'distance', 'vertical_meters', 'stage_nr', 'gradient_final_km']
+    Extrahiert automatisch den Rang im Ziel, falls die Etappe bereits gelaufen ist.
     """
     print(f"\n--- Starte Live-Etappen-Scan: {url} ---")
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0 Safari/537.36"}
@@ -38,23 +33,17 @@ def scrape_pcs_stage_clean(url, user_inputs):
         # ==================================================================
         # DATAFRAME 1: METADATEN FÜR DAS MODELL
         # ==================================================================
-
-        # Distanz parsen (z.B. "221 km" -> 221.0)
         raw_dist = get_raw_value("Distance")
         distance_val = float(re.search(r'([\d\.]+)', raw_dist).group(1)) if raw_dist else None
 
-        # Höhenmeter parsen (z.B. "2348" -> 2348)
         raw_vm = get_raw_value("Vertical meters")
         vm_val = int(re.search(r'(\d+)', raw_vm).group(1)) if raw_vm else None
 
-        # Letzter Kilometer Steigung (z.B. "1.0%" -> 1.0)
         raw_grad = get_raw_value("Gradient final km")
         grad_val = float(re.search(r'([\d\.\-]+)', raw_grad).group(1)) if raw_grad else None
 
-        # Datum holen (z.B. "09 May 2026")
         date_val = get_raw_value("Date")
 
-        # Welches Rennen (Kürzel mappen für tdf, giro, vuelta)
         race_input = user_inputs.get("race_slug", "")
         race_clean = "tdf" if "tour" in race_input else ("giro" if "giro" in race_input else "vuelta")
 
@@ -70,7 +59,7 @@ def scrape_pcs_stage_clean(url, user_inputs):
         df_stage_meta = pd.DataFrame([stage_meta_data])
 
         # ==================================================================
-        # DATAFRAME 2: DIE STARTLISTE
+        # DATAFRAME 2: DIE STARTLISTE & REALER RANG
         # ==================================================================
         riders_list = []
         table = tree.css_first("table.results")
@@ -81,25 +70,31 @@ def scrape_pcs_stage_clean(url, user_inputs):
                 cells = row.css("td")
                 rider_link = row.css_first('a[href*="rider/"]')
 
-                # Sicherstellen, dass es eine valide Zeile mit Fahrerlink ist
-                if rider_link and len(cells) >= 8:
-                    rank = cells[0].text().strip()
+                # Valide Ergebnis-Zeile prüfen
+                if rider_link and len(cells) >= 5:
+                    raw_rank = cells[0].text().strip()
 
-                    # URL extrahieren & säubern: 'rider/florian-stork' -> 'florian-stork'
+                    # Säuberung des Rangs (z.B. "1", "DNF", "" bei reinen Startlisten)
+                    try:
+                        # Extrahiere nur Ziffern (falls Punkte oder Zusätze wie "1st" enthalten sind)
+                        digit_match = re.search(r'(\d+)', raw_rank)
+                        rank_val = int(digit_match.group(1)) if digit_match else None
+                    except ValueError:
+                        rank_val = None
+
+                    # URL extrahieren & säubern
                     raw_href = rider_link.attributes.get("href", "")
                     rider_url_clean = raw_href.split('/')[-1] if '/' in raw_href else raw_href
-
                     rider_name = rider_link.text().strip()
 
                     riders_list.append({
-                        "rank": rank,
+                        "rank": rank_val,  # Enthält den echten Platz (Integer) oder None
                         "rider_url": rider_url_clean,
                         "rider_name": rider_name
                     })
 
         df_startlist = pd.DataFrame(riders_list)
 
-        # Schnelle Terminal-Kontrolle für den User
         print("➔ Metadaten-Extraktion abgeschlossen.")
         print(f"➔ Startliste geladen: {len(df_startlist)} Fahrer gefunden.")
 
