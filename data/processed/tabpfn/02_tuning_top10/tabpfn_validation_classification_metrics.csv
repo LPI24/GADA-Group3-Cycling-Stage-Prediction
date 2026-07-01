@@ -1,0 +1,6 @@
+scope,variant_name,evaluation_name,target,actual_col,score_name,threshold,threshold_source,rows,actual_positives,predicted_positives,precision,recall,f1,roc_auc,average_precision
+validation_2023,standard_selected,top5_native_0_5,top5,actual_top5,p_top5_valid,0.5,native_0_5,8897,284,1163,0.11693895098882201,0.4788732394366197,0.18797512093987562,0.7777164554726477,0.1930444216048587
+validation_2023,standard_selected,top10_native_0_5,top10,actual_top10,p_top10_valid,0.5,native_0_5,8897,570,1419,0.2022551092318534,0.5035087719298246,0.2885872297637003,0.7831280194000072,0.27404284799510403
+validation_2023,standard_selected,top20_native_0_5,top20,actual_top20,p_top20_valid,0.5,native_0_5,8897,1138,1719,0.3275159976730657,0.4947275922671353,0.3941197059852993,0.7593777938245534,0.36921460621184404
+validation_2023,standard_selected,frank_hall_top10_native_0_5,top10,actual_top10,score_topk_raw_sum_valid,0.5,native_0_5,8897,570,4815,0.10301142263759086,0.8701754385964913,0.18421541318477253,0.7836663232477735,0.2750559139040652
+validation_2023,standard_selected,frank_hall_top10_optimized_valid_2023,top10,actual_top10,score_topk_raw_sum_valid,2.1,optimized_valid_2023_f1,8897,570,656,0.29878048780487804,0.34385964912280703,0.3197389885807504,0.7836663232477735,0.2750559139040652

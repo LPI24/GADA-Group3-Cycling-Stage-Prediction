@@ -10,21 +10,48 @@
     "average_before_softmax": true,
     "balance_probabilities": true,
     "n_estimators": 4,
-    "softmax_temperature": 1.0
+    "softmax_temperature": 0.8
   },
   "excluded_from_validation": [
     "thinking_effort",
     "thinking_metric",
-    "thinking_mode"
+    "thinking_mode",
+    "thinking_timeout_s"
   ],
   "validation_metrics": {
     "roc_auc": 0.7831280194000072,
     "average_precision": 0.27404284799510403
   },
   "validation_runtime": {
-    "fit_seconds": 0.434,
-    "predict_seconds": 23.027,
-    "total_seconds": 23.496
+    "fit_seconds": 0.423,
+    "predict_seconds": 23.092,
+    "total_seconds": 23.553,
+    "runtime_time_source": "current_api_run",
+    "api_run_timestamp": "2026-06-30T20:07:13.460860+00:00"
   },
-  "selection_reason": "Best validation roc_auc; runtime used as tie-breaker."
+  "selection_reason": "Best validation roc_auc; average_precision, original API runtime and simpler configuration used as tie-breakers.",
+  "frank_hall_validation": {
+    "score_name": "score_topk_raw_sum_valid",
+    "threshold_target": "top10",
+    "threshold_actual_col": "actual_top10",
+    "threshold_metric": "f1",
+    "threshold_validation_context": "X_valid, meta_year == 2023",
+    "native_ensemble_threshold": 0.5,
+    "optimized_threshold": 2.1,
+    "threshold_grid_min": 0.0,
+    "threshold_grid_max": 3.0,
+    "threshold_grid_step": 0.01,
+    "optimized_threshold_metrics": {
+      "precision": 0.29878048780487804,
+      "recall": 0.34385964912280703,
+      "f1": 0.3197389885807504,
+      "predicted_positives": 656,
+      "actual_positives": 570
+    },
+    "component_scores": [
+      "p_top5_valid",
+      "p_top10_valid",
+      "p_top20_valid"
+    ]
+  }
 }

@@ -1,0 +1,14 @@
+{
+  "run_label": "grid_032",
+  "target": "top10",
+  "fit_seconds": 0.429,
+  "predict_seconds": 46.178,
+  "total_seconds": 46.644,
+  "runtime_status": "cache_hit",
+  "runtime_time_source": "current_api_run",
+  "api_run_timestamp": "2026-06-30T20:22:00.711367+00:00",
+  "rows_train": 169349,
+  "rows_valid": 8897,
+  "params_json": "{\"average_before_softmax\": false, \"balance_probabilities\": false, \"n_estimators\": 8, \"softmax_temperature\": 1.0}",
+  "params_short": "average_before_softmax-False__balance_probabilities-False__n_estimators-8__softmax_temperature-1.0"
+}
