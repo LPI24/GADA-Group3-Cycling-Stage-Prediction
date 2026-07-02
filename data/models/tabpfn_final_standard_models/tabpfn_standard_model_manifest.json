@@ -1,0 +1,169 @@
+{
+  "created_at_utc": "2026-07-01T14:28:59.547882+00:00",
+  "model_dir": "/Users/roberthendrich/GADA-Group3-Cycling-Stage-Prediction/data/models/tabpfn_final_standard_models",
+  "required_targets": [
+    "top5",
+    "top10",
+    "top20"
+  ],
+  "feature_columns": [
+    "distance",
+    "vertical_meters",
+    "stage_nr",
+    "team_tier",
+    "age_at_race",
+    "rider_bmi",
+    "wind_stability_index",
+    "weather_temp_mean",
+    "weather_temp_trend",
+    "weather_rain_prob_mean",
+    "weather_precipitation_mean",
+    "weather_humidity_mean",
+    "gradient_final_km",
+    "lag_rider_points_season",
+    "lag_rider_rank_season",
+    "lag_race_competitiveness_median",
+    "lag_team_power_index"
+  ],
+  "all_standard_models_available": true,
+  "rows": [
+    {
+      "variant_name": "standard",
+      "target": "top5",
+      "model_family": "TabPFNClassifier",
+      "model_path": "/Users/roberthendrich/GADA-Group3-Cycling-Stage-Prediction/data/models/tabpfn_final_standard_models/tabpfn_standard_top5_model.pkl",
+      "model_file_exists": true,
+      "export_status": "exported",
+      "export_error": null,
+      "source": "current_api_fit",
+      "params": {
+        "average_before_softmax": true,
+        "balance_probabilities": true,
+        "n_estimators": 4,
+        "softmax_temperature": 0.8
+      },
+      "feature_columns": [
+        "distance",
+        "vertical_meters",
+        "stage_nr",
+        "team_tier",
+        "age_at_race",
+        "rider_bmi",
+        "wind_stability_index",
+        "weather_temp_mean",
+        "weather_temp_trend",
+        "weather_rain_prob_mean",
+        "weather_precipitation_mean",
+        "weather_humidity_mean",
+        "gradient_final_km",
+        "lag_rider_points_season",
+        "lag_rider_rank_season",
+        "lag_race_competitiveness_median",
+        "lag_team_power_index"
+      ],
+      "train_shape": [
+        178246,
+        17
+      ],
+      "test_shape": [
+        17802,
+        17
+      ],
+      "prediction_path": "/Users/roberthendrich/GADA-Group3-Cycling-Stage-Prediction/data/processed/tabpfn/03_final_three_targets/predictions/standard/tabpfn_final_predictions_top5_2024_2025.csv",
+      "request_fingerprint": "4d10898f16e86820692e1d6dba630168ac2c9a1ae5373af402bac278c46fa5ba",
+      "created_at_utc": "2026-07-01T14:27:40.517779+00:00"
+    },
+    {
+      "variant_name": "standard",
+      "target": "top10",
+      "model_family": "TabPFNClassifier",
+      "model_path": "/Users/roberthendrich/GADA-Group3-Cycling-Stage-Prediction/data/models/tabpfn_final_standard_models/tabpfn_standard_top10_model.pkl",
+      "model_file_exists": true,
+      "export_status": "exported",
+      "export_error": null,
+      "source": "current_api_fit",
+      "params": {
+        "average_before_softmax": true,
+        "balance_probabilities": true,
+        "n_estimators": 4,
+        "softmax_temperature": 0.8
+      },
+      "feature_columns": [
+        "distance",
+        "vertical_meters",
+        "stage_nr",
+        "team_tier",
+        "age_at_race",
+        "rider_bmi",
+        "wind_stability_index",
+        "weather_temp_mean",
+        "weather_temp_trend",
+        "weather_rain_prob_mean",
+        "weather_precipitation_mean",
+        "weather_humidity_mean",
+        "gradient_final_km",
+        "lag_rider_points_season",
+        "lag_rider_rank_season",
+        "lag_race_competitiveness_median",
+        "lag_team_power_index"
+      ],
+      "train_shape": [
+        178246,
+        17
+      ],
+      "test_shape": [
+        17802,
+        17
+      ],
+      "prediction_path": "/Users/roberthendrich/GADA-Group3-Cycling-Stage-Prediction/data/processed/tabpfn/03_final_three_targets/predictions/standard/tabpfn_final_predictions_top10_2024_2025.csv",
+      "request_fingerprint": "4916e67209e7aeda5d2d6b22bc3f3afb1d538b7f6790ae370386aa5d13f66ab8",
+      "created_at_utc": "2026-07-01T14:28:21.318498+00:00"
+    },
+    {
+      "variant_name": "standard",
+      "target": "top20",
+      "model_family": "TabPFNClassifier",
+      "model_path": "/Users/roberthendrich/GADA-Group3-Cycling-Stage-Prediction/data/models/tabpfn_final_standard_models/tabpfn_standard_top20_model.pkl",
+      "model_file_exists": true,
+      "export_status": "exported",
+      "export_error": null,
+      "source": "current_api_fit",
+      "params": {
+        "average_before_softmax": true,
+        "balance_probabilities": true,
+        "n_estimators": 4,
+        "softmax_temperature": 0.8
+      },
+      "feature_columns": [
+        "distance",
+        "vertical_meters",
+        "stage_nr",
+        "team_tier",
+        "age_at_race",
+        "rider_bmi",
+        "wind_stability_index",
+        "weather_temp_mean",
+        "weather_temp_trend",
+        "weather_rain_prob_mean",
+        "weather_precipitation_mean",
+        "weather_humidity_mean",
+        "gradient_final_km",
+        "lag_rider_points_season",
+        "lag_rider_rank_season",
+        "lag_race_competitiveness_median",
+        "lag_team_power_index"
+      ],
+      "train_shape": [
+        178246,
+        17
+      ],
+      "test_shape": [
+        17802,
+        17
+      ],
+      "prediction_path": "/Users/roberthendrich/GADA-Group3-Cycling-Stage-Prediction/data/processed/tabpfn/03_final_three_targets/predictions/standard/tabpfn_final_predictions_top20_2024_2025.csv",
+      "request_fingerprint": "079e773c77e71edf42f664f9b6e77dbb46b955509f2cefe91cf6c65748ea46e0",
+      "created_at_utc": "2026-07-01T14:28:58.838294+00:00"
+    }
+  ]
+}
