@@ -45,6 +45,7 @@ def prepare_live_features(df_final_report, df_stage_meta):
     current_race = str(df_stage_meta["race"].iloc[0]).lower().strip()
 
     # Exakte historische Mediane injizieren je nach Grand Tour
+    # Erweiterung um "tdf" für das Tour-de-France-Kürzel aus den Live-Metadaten
     if "giro" in current_race:
         df_live["weather_temp_mean"] = 18.33
         df_live["weather_humidity_mean"] = 59.25
@@ -52,7 +53,7 @@ def prepare_live_features(df_final_report, df_stage_meta):
         df_live["weather_precipitation_mean"] = 0.040
         df_live["wind_stability_index"] = 0.1990
         df_live["weather_temp_trend"] = -1.25
-    elif "tour" in current_race:
+    elif "tour" in current_race or "tdf" in current_race:
         df_live["weather_temp_mean"] = 22.95
         df_live["weather_humidity_mean"] = 54.00
         df_live["weather_rain_prob_mean"] = 0.015
@@ -66,6 +67,14 @@ def prepare_live_features(df_final_report, df_stage_meta):
         df_live["weather_precipitation_mean"] = 0.000
         df_live["wind_stability_index"] = 0.1736
         df_live["weather_temp_trend"] = -0.40
+    else:
+        # Globaler Fallback, falls ein unbekanntes Rennen übergeben wird
+        df_live["weather_temp_mean"] = 21.5
+        df_live["weather_humidity_mean"] = 55.0
+        df_live["weather_rain_prob_mean"] = 0.01
+        df_live["weather_precipitation_mean"] = 0.01
+        df_live["wind_stability_index"] = 0.16
+        df_live["weather_temp_trend"] = 0.0
 
 
     # 3. MATHEMATISCHE BERECHNUNGEN (ALTER & RENN-METRIKEN)

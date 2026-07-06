@@ -73,12 +73,14 @@ def run_master_inference(df_live_features, df_stage_meta):
             stage_date = pd.to_datetime(stage_date_str, errors="coerce")
 
         today = pd.to_datetime(time.strftime("%Y-%m-%d"))
-        is_stage_finished = today >= (stage_date + pd.Timedelta(days=1))
+
+        # KORREKTUR: Erlaubt den Ergebnis-Abgleich am selben Tag (heute)
+        is_stage_finished = today >= stage_date
+
     except Exception as e:
         print(f"⚠️ Hinweis beim Datum-Parsing: {e}. Schalte auf Live-Modus.")
         is_stage_finished = False
         stage_date = "Unbekannt"
-
     # Sauberer Header
     print(f"ETAPPE       : {df_stage_meta['stage_url'].iloc[0]}")
     print(f"DATUM        : {stage_date_str}")
