@@ -7,7 +7,7 @@ from tabpfn_client import TabPFNClient
 # 1. API-AUTHENTIFIZIERUNG & MODELL-LOAD
 # ==============================================================================
 # WICHTIG: Setze hier den echten API-Key aus dem PriorLabs-Konto deines Kollegen ein!
-API_KEY = "DEIN_PRIORLABS_API_KEY_HIER"
+API_KEY = "tabpfn_sk_BleumEnMePsRs8ibsHCeyCKVwh-ZJjHnW05xHYjW5Fg"
 TabPFNClient(api_key=API_KEY)
 
 print("⏳ Lade die drei trainierten TabPFN Frank-&-Hall-Modelle...")
