@@ -1,0 +1,13 @@
+explanation,feature,mean_abs_shap,mean_signed_shap,importance_rank,score_feature_order
+score_topk_raw_sum,wind_stability_index,0.0,0.0,15,1
+top10,wind_stability_index,0.0,0.0,15,1
+top20,wind_stability_index,0.0,0.0,15,1
+top5,wind_stability_index,0.0,0.0,15,1
+score_topk_raw_sum,stage_nr,0.0,0.0,16,2
+top10,stage_nr,0.0,0.0,16,2
+top20,stage_nr,0.0,0.0,16,2
+top5,stage_nr,0.0,0.0,16,2
+score_topk_raw_sum,weather_temp_trend,0.0,0.0,17,3
+top10,weather_temp_trend,0.0,0.0,17,3
+top20,weather_temp_trend,0.0,0.0,17,3
+top5,weather_temp_trend,0.0,0.0,17,3

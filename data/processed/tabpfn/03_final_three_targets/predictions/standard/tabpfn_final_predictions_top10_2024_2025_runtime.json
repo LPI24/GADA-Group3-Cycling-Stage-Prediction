@@ -1,12 +1,12 @@
 {
   "variant_name": "standard",
   "target": "top10",
-  "fit_seconds": 0.432,
-  "predict_seconds": 26.964,
-  "total_seconds": 27.497,
-  "runtime_status": "cache_hit",
+  "fit_seconds": 5.718,
+  "predict_seconds": 38.409,
+  "total_seconds": 44.265,
+  "runtime_status": "api_run",
   "runtime_time_source": "current_api_run",
-  "api_run_timestamp": "2026-07-01T09:11:39.293243+00:00",
+  "api_run_timestamp": "2026-07-04T04:43:44.939303+00:00",
   "runtime_complete_for_comparison": true,
   "train_rows": 178246,
   "test_rows": 17802,
@@ -19,5 +19,6 @@
   "thinking_timeout_s": null,
   "force_refit": false,
   "thinking_verified_by_runtime": true,
-  "prediction_path": "/Users/roberthendrich/GADA-Group3-Cycling-Stage-Prediction/data/processed/tabpfn/03_final_three_targets/predictions/standard/tabpfn_final_predictions_top10_2024_2025.csv"
+  "prediction_path": "/Users/roberthendrich/GADA-Group3-Cycling-Stage-Prediction/data/processed/tabpfn/03_final_three_targets/predictions/standard/tabpfn_final_predictions_top10_2024_2025.csv",
+  "request_payload_json": "{\"client_timeout_seconds\": null, \"feature_columns\": [\"distance\", \"vertical_meters\", \"stage_nr\", \"team_tier\", \"age_at_race\", \"rider_bmi\", \"wind_stability_index\", \"weather_temp_mean\", \"weather_temp_trend\", \"weather_rain_prob_mean\", \"weather_precipitation_mean\", \"weather_humidity_mean\", \"gradient_final_km\", \"lag_rider_points_season\", \"lag_rider_rank_season\", \"lag_race_competitiveness_median\", \"lag_team_power_index\"], \"params\": {\"average_before_softmax\": true, \"balance_probabilities\": true, \"n_estimators\": 4, \"softmax_temperature\": 0.8}, \"target\": \"top10\", \"test_rows\": 17802, \"train_rows\": 178246, \"validated_threshold\": 2.1, \"variant_name\": \"standard\"}"
 }
