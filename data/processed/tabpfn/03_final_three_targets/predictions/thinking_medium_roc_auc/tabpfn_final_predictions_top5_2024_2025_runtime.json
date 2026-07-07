@@ -19,5 +19,5 @@
   "thinking_timeout_s": 2400,
   "force_refit": true,
   "thinking_verified_by_runtime": true,
-  "prediction_path": "/Users/roberthendrich/GADA-Group3-Cycling-Stage-Prediction/data/processed/tabpfn/03_final_three_targets/predictions/thinking_medium_roc_auc/tabpfn_final_predictions_top5_2024_2025.csv"
+  "prediction_path": "c:\\projects\\cycling_project\\data\\processed\\tabpfn\\03_final_three_targets\\predictions\\thinking_medium_roc_auc\\tabpfn_final_predictions_top5_2024_2025.csv"
 }
