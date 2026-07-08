@@ -22,8 +22,8 @@ def get_user_inputs():
 
     # JAHR ABFRAGEN (Nur ab 2026 akzeptieren)
     while True:
-        year_input = input("Welches Jahr? (Ab 2026): ").strip()
-        if year_input.isdigit() and int(year_input) >= 2026:
+        year_input = input("Welches Jahr?: ").strip()
+        if year_input.isdigit():
             race_year = int(year_input)
             break
         print("!!!Ungültige Eingabe! Bitte gib eine Jahreszahl ein, die 2026 oder höher ist.")

@@ -1,6 +1,5 @@
-# ==============================================================================
 # _02_stage_scraper.py (FINALE VERSION MIT ERGEBNIS-EXTRAKTION)
-# ==============================================================================
+
 import re
 import pandas as pd
 from curl_cffi import requests
