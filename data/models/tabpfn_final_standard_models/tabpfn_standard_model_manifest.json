@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-07-12T14:51:11.526593+00:00",
+  "created_at_utc": "2026-07-12T15:04:24.279888+00:00",
   "model_dir": "/Users/roberthendrich/GADA-Group3-Cycling-Stage-Prediction/data/models/tabpfn_final_standard_models",
   "required_targets": [
     "top5",
@@ -71,7 +71,7 @@
       ],
       "prediction_path": "/Users/roberthendrich/GADA-Group3-Cycling-Stage-Prediction/data/processed/tabpfn/03_final_three_targets/predictions/standard/tabpfn_final_predictions_top5_2024_2025.csv",
       "request_fingerprint": "4d10898f16e86820692e1d6dba630168ac2c9a1ae5373af402bac278c46fa5ba",
-      "created_at_utc": "2026-07-12T14:51:10.877533+00:00"
+      "created_at_utc": "2026-07-12T15:04:23.635723+00:00"
     },
     {
       "variant_name": "standard",
@@ -117,7 +117,7 @@
       ],
       "prediction_path": "/Users/roberthendrich/GADA-Group3-Cycling-Stage-Prediction/data/processed/tabpfn/03_final_three_targets/predictions/standard/tabpfn_final_predictions_top10_2024_2025.csv",
       "request_fingerprint": "4916e67209e7aeda5d2d6b22bc3f3afb1d538b7f6790ae370386aa5d13f66ab8",
-      "created_at_utc": "2026-07-12T14:51:10.917886+00:00"
+      "created_at_utc": "2026-07-12T15:04:23.675204+00:00"
     },
     {
       "variant_name": "standard",
@@ -163,7 +163,7 @@
       ],
       "prediction_path": "/Users/roberthendrich/GADA-Group3-Cycling-Stage-Prediction/data/processed/tabpfn/03_final_three_targets/predictions/standard/tabpfn_final_predictions_top20_2024_2025.csv",
       "request_fingerprint": "079e773c77e71edf42f664f9b6e77dbb46b955509f2cefe91cf6c65748ea46e0",
-      "created_at_utc": "2026-07-12T14:51:10.958916+00:00"
+      "created_at_utc": "2026-07-12T15:04:23.716656+00:00"
     }
   ]
 }
