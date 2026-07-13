@@ -1,7 +1,0 @@
-artifact,role,exists,new_plan_use
-src/Notebooks/tabpfn_alt/12-00-01_Versuch_1_TabPFN_3.ipynb,historische lokale Top10-Tests,True,nur lesen/kontextualisieren
-src/Notebooks/tabpfn_alt/12-00-02_tabpfn-client_Versuch.ipynb,historischer API-Versuch,True,nur lesen/kontextualisieren
-src/Notebooks/tabpfn_alt/12-02-02_TabPFN_Client_Learning_Curve_Validation_2023.ipynb,"Legacy-Learning-Curve, nur Kontext",True,nur lesen/kontextualisieren
-src/Notebooks/tabpfn_alt/12-03-01_TabPFN_Classifier.ipynb,Referenz für binären Classifier-Code,True,nur lesen/kontextualisieren
-data/processed/tabpfn_3_experiments/,"Legacy-Cache, nicht neue Ergebnisquelle",True,nur lesen/kontextualisieren
-data/processed/tabpfn_top10_metrics.csv,historische Top10-Metrikdatei,True,nur lesen/kontextualisieren

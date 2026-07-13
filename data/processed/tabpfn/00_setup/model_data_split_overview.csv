@@ -1,5 +1,0 @@
-split,rows,features,stages,years,method_role
-train_selection,169349,17,997,<=2022,Training für Top10-Validierung
-validation,8897,17,57,2023,Hyperparameterwahl nur hier
-test_original,17802,17,112,"2024, 2025",Finaler Zukunftstest
-train_final,178246,17,1054,<=2023,Finales Training vor Test

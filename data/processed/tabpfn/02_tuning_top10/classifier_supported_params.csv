@@ -1,9 +1,0 @@
-parameter,supported_by_classifier,planned_values,validation_status,client_source
-n_estimators,True,"[4, 8]",test im Full Grid in 12-02,tabpfn_client
-softmax_temperature,True,"[0.6, 0.8, 1.0, 1.2, 1.4]",test im Full Grid in 12-02,tabpfn_client
-average_before_softmax,True,"[True, False]",test im Full Grid in 12-02,tabpfn_client
-balance_probabilities,True,"[True, False]",test im Full Grid in 12-02,tabpfn_client
-thinking_effort,True,[],nur finaler Test in 12-03,tabpfn_client
-thinking_metric,True,[],nur finaler Test in 12-03,tabpfn_client
-thinking_mode,True,[],nur finaler Test in 12-03,tabpfn_client
-thinking_timeout_s,True,[],nur finaler Test in 12-03,tabpfn_client
