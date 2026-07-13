@@ -11,8 +11,8 @@ data/raw/*.jsonl
 data/processed/*.pkl
 data/processed/*.csv
 data/processed/tabpfn_3_experiments/*
-data/processed/tabpfn
-data/processed/Veraltet
+data/processed/tabpfn/
+data/processed/Veraltet/
 
 
 # Stattdessen nur Scraping-Logs oder temporäre Scraper-Daten ignorieren:
