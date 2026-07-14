@@ -1,4 +1,0 @@
-target,score_col,rows,max_abs_diff,mean_abs_diff,allclose_1e_6,prediction_check_atol,within_prediction_tolerance
-top5,p_top5_raw,30,0.0003056526184082031,0.00012009935453531929,False,0.002,True
-top10,p_top10_raw,30,0.0003762245178222656,0.00013959972808757527,False,0.002,True
-top20,p_top20_raw,30,0.0006522536277770996,0.00013266292711097474,False,0.002,True
