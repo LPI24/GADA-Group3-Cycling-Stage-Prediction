@@ -11,7 +11,7 @@ data/raw/*.jsonl
 data/processed/*.pkl
 data/processed/*.csv
 data/processed/tabpfn_3_experiments/*
-data/processed/tabpfn/
+data/processed/tabpfn/*
 data/processed/Veraltet/
 
 

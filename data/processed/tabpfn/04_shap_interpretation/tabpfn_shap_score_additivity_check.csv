@@ -1,2 +1,2 @@
 score_name,rows,max_abs_diff,mean_abs_diff,allclose_1e_4
-score_topk_raw_sum,35,0.0008648037910461426,0.00026138818689754793,False
+score_topk_raw_sum,30,0.000906333327293174,0.00024077709143355483,False

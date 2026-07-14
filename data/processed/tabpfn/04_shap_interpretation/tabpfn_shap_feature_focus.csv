@@ -1,9 +1,9 @@
 group,feature
 top5_important,lag_rider_points_season
 top5_important,lag_rider_rank_season
-top5_important,age_at_race
 top5_important,rider_bmi
-top5_important,lag_team_power_index
+top5_important,age_at_race
+top5_important,vertical_meters
+bottom3_unimportant,distance
+bottom3_unimportant,weather_humidity_mean
 bottom3_unimportant,wind_stability_index
-bottom3_unimportant,stage_nr
-bottom3_unimportant,weather_temp_trend
