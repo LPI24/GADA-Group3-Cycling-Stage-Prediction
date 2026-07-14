@@ -103,7 +103,7 @@ def calculate_ap_at_10(true_ranks, pred_scores):
 def run_master_inference(df_live_features, df_stage_meta):
     """
     Zentraler Master-Inferenz-Knoten für alle drei Modellwelten:
-    EBM, XGBoost und TabPFN.
+    EBM, XGBoost, TabPFN und XGBRanker
     """
     print("\n" + "=" * 100)
     print("SCHRITT 7: MASTER-INFERENZ & AKADEMISCHE EVALUIERUNG")
@@ -196,6 +196,7 @@ def run_master_inference(df_live_features, df_stage_meta):
         "EBM": "ebm_best_binary_ensemble.pkl",
         "XGBoost": "xgboost_classifier_results.json",
         "TabPFN": "tabpfn_final_results.csv",
+        "XGBRanker": "xgbranker_best.json",
     }
 
     metrics_summary = []
@@ -387,6 +388,33 @@ def run_master_inference(df_live_features, df_stage_meta):
                     print(f"Fehler bei Inferenz von TabPFN: {e}")
                     traceback.print_exc()
                     continue
+
+
+            # ==================================================================
+            # XGBRanker
+            # ==================================================================
+            elif model_name == "XGBRanker":
+                # XGBRanker ist ein explizites Learning-to-Rank-Modell.
+                # Für die Live-Inferenz wird keine Gruppengröße benötigt;
+                # das Modell gibt pro Fahrer einen Ranking-Score aus.
+                try:
+                    ranker_model = xgb.XGBRanker()
+                    ranker_model.load_model(str(model_path))
+                    pred_scores = ranker_model.predict(X_live)
+                except Exception:
+                    # Fallback, falls das Modell als reiner Booster gespeichert wurde.
+                    booster = xgb.Booster()
+                    booster.load_model(str(model_path))
+                    dmatrix = xgb.DMatrix(X_live, feature_names=feature_cols)
+                    pred_scores = booster.predict(dmatrix)
+
+                pred_scores = np.asarray(pred_scores, dtype=float).reshape(-1)
+
+                if len(pred_scores) != len(df_live_features):
+                    raise ValueError(
+                        f"XGBRanker lieferte {len(pred_scores)} Scores, "
+                        f"erwartet wurden {len(df_live_features)}."
+                    )
 
         except Exception as e:
             print(f"Fehler bei Inferenz von {model_name}: {e}")
