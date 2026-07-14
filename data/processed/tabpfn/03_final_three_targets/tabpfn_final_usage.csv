@@ -1,0 +1,3 @@
+variant_name,usage_status,note
+standard,not_captured_in_notebook,Token/credit usage must be filled from client-specific usage APIs if available.
+thinking_medium_roc_auc,not_captured_in_notebook,Token/credit usage must be filled from client-specific usage APIs if available.

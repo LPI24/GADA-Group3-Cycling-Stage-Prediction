@@ -1,0 +1,3 @@
+variant_name,role,extra_params_json,client_timeout_seconds,unsupported_params,client_timeout_supported,can_run,client_source
+standard,selected_params_without_thinking,{},,,True,True,tabpfn_client
+thinking_medium_roc_auc,final_test_comparison_only,"{""force_refit"": true, ""thinking_effort"": ""medium"", ""thinking_metric"": ""roc_auc"", ""thinking_mode"": true, ""thinking_timeout_s"": 2400}",3000.0,,True,True,tabpfn_client
