@@ -91,7 +91,7 @@ Für die vollständige Reproduktion des Projekts sollte die folgende Reihenfolge
 | 11 | `08_02_Bivariate_Analysis.ipynb` | bivariate Analyse der finalen Features |
 | 12 | `10-00_Model_Data_Prep.ipynb` | Erstellung der finalen Modelldatenbasis mit Trainings-, Validierungs- und Testsplit |
 | 13 | `10-01_EBM_classif.ipynb` | Training, Tuning und Evaluation des EBM-/GA²M-Modells |
-| 14 | `11-01_XGBoost_Classifier.ipynb` | Training und Evaluation des XGBoost-Klassifikators |
+| 14 | `11-01_XGBoost_Classifier.ipynb` / `11-02_XGBoost_Ranker.ipynb` | Training und Evaluation des XGBoost-Klassifikators sowie XGBoost Ranker |
 | 15 | `12-00_TabPFN_Intro_Setup.ipynb` bis `12-04_TabPFN_SHAP_Interpretation.ipynb` | Setup, Tuning, finale Evaluation und Interpretation des TabPFN-Modells |
 
 ### Unterstützende und explorative Notebooks
@@ -104,10 +104,7 @@ Dazu gehören insbesondere:
 02_Model_Explanations.ipynb
 05_01_Data_Exploration.ipynb
 10_Feature_Selection.md
-11-00_XGBoost_Regressor.ipynb
-Koordinaten_test.ipynb
-weather_test.ipynb
-XGBoost_test.ipynb
+
 ```
 
 ## Nutzung des CLI Prediction Tools
