@@ -20,7 +20,7 @@ def get_user_inputs():
             break
         print("!!!Ungültige Eingabe! Bitte tippe entweder 'Giro', 'Tour' oder 'Vuelta'.")
 
-    # JAHR ABFRAGEN (Nur ab 2026 akzeptieren)
+    # JAHR ABFRAGEN
     while True:
         year_input = input("Welches Jahr?: ").strip()
         if year_input.isdigit():
