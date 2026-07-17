@@ -4,6 +4,7 @@ import pandas as pd
 from curl_cffi import requests
 from selectolax.parser import HTMLParser
 from database_manager import CyclingDatabase
+import time
 
 
 # Wir importieren deine bewährten, robusten Extraktions-Funktionen aus Schritt 4!
@@ -12,6 +13,7 @@ from _04_scraper_missing_drivers_profiles import (
     extract_current_team_and_tier,
     extract_lag_points_and_rank
 )
+
 
 def scrape_and_save_missing_lags(df_missing_lags, df_stage_meta):
     """
@@ -47,6 +49,11 @@ def scrape_and_save_missing_lags(df_missing_lags, df_stage_meta):
     conn = db.get_connection()
     cursor = conn.cursor()
 
+    # NEU: Zähler für Erfolge und Fehlschläge
+    erfolgreich = 0
+    fehlgeschlagen = 0
+    max_retries = 3
+
     try:
         for _, row in df_missing_lags.iterrows():
             url_slug = row["rider_url"]
@@ -55,14 +62,34 @@ def scrape_and_save_missing_lags(df_missing_lags, df_stage_meta):
             full_url = f"https://www.procyclingstats.com/rider/{url_slug}"
             print(f"\n--->Scrape historische Lags ({target_lag_year}): {display_name}")
 
-            try:
-                resp = requests.get(full_url, headers=headers, impersonate="chrome120", timeout=12)
-            except Exception as e:
-                print(f"--Request-Fehler für {url_slug}: {e}")
+            # Retry-Logik bei 429 Rate-Limit
+            resp = None
+            for attempt in range(max_retries):
+                try:
+                    resp = requests.get(full_url, headers=headers, impersonate="chrome120", timeout=12)
+                except Exception as e:
+                    print(f"--Request-Fehler für {url_slug}: {e}")
+                    resp = None
+                    break
+
+                if resp.status_code == 429:
+                    wait_time = 30 * (attempt + 1)  # 30s, 60s, 90s
+                    print(f"--Rate-Limit (429) bei {url_slug}. Warte {wait_time}s... (Versuch {attempt + 1}/{max_retries})")
+                    time.sleep(wait_time)
+                    resp = None
+                    continue
+                else:
+                    break  # Status != 429, Schleife verlassen
+
+            # NEU: Prüfen ob Request erfolgreich war
+            if resp is None:
+                print(f"--Fehler: {url_slug} konnte nach {max_retries} Versuchen nicht geladen werden.")
+                fehlgeschlagen += 1
                 continue
 
             if resp.status_code != 200:
                 print(f"--Fehler beim Laden für {url_slug}. Status: {resp.status_code}")
+                fehlgeschlagen += 1
                 continue
 
             tree = HTMLParser(resp.text)
@@ -74,6 +101,7 @@ def scrape_and_save_missing_lags(df_missing_lags, df_stage_meta):
 
             if team_tier == "SKIP_CLUB":
                 print(f"--Fahrer {display_name} wird ignoriert (Tier: CLUB). Kein DB-Update.")
+                erfolgreich += 1  # Erfolgreich verarbeitet, nur kein DB-Update nötig
                 continue
 
             # ==================================================================
@@ -82,7 +110,7 @@ def scrape_and_save_missing_lags(df_missing_lags, df_stage_meta):
             lag_rider_points_season, lag_rider_rank_season = extract_lag_points_and_rank(tree, target_lag_year)
 
             # ==================================================================
-            # 3. IN LAGS_HISTORICAL SCHREIBEN (Erzeugt das 2025er Jahr bei einer Etappe aus 2026)
+            # 3. IN LAGS_HISTORICAL SCHREIBEN
             # ==================================================================
             cursor.execute(
                 """
@@ -100,10 +128,19 @@ def scrape_and_save_missing_lags(df_missing_lags, df_stage_meta):
             )
 
             print(f"---Lag-Update komplett! Team: {current_team} | Tier: {team_tier} | Punkte: {lag_rider_points_season} | Rang: {lag_rider_rank_season}")
+            erfolgreich += 1
+
+
+            time.sleep(2)
 
         conn.commit()
         print("\n==================================================================")
-        print("ALLE FEHLENDEN SAISON-LAGS ERFOLGREICH IN DIE DB INTEGRIERT!")
+        if fehlgeschlagen > 0:
+            print(f"{erfolgreich} Fahrer erfolgreich aktualisiert, {fehlgeschlagen} fehlgeschlagen (z.B. Rate-Limit).")
+            print("Bitte fehlerhafte Fahrer später erneut versuchen.")
+        else:
+            print(f"{erfolgreich} von {len(df_missing_lags)} Fahrern erfolgreich aktualisiert.")
+            print("ALLE FEHLENDEN SAISON-LAGS ERFOLGREICH IN DIE DB INTEGRIERT!")
         print("==================================================================")
 
     except Exception as e:
